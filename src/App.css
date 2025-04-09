@@ -1,0 +1,25 @@
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.path-nav {
+  color: #6c757d;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .card-body .row div {
+    margin-bottom: 10px;
+  }
+}
+.email-list {
+  width: 80%
+}
