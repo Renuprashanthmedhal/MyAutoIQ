@@ -27,7 +27,7 @@ const EmailList = () => {
   if (error) return <div className="alert alert-danger mt-3">{error}</div>;
 
   return (
-    <div className="email-list mt-3">
+    <div className="mt-3">
       <div className="row">
         <div className="col-12 mb-3 d-flex justify-content-center align-items-center flex-column">
           <h4>Name: Jill Jones</h4>
@@ -66,8 +66,8 @@ const EmailList = () => {
       {sortedEmails.length === 0 ? (
         <div className="alert alert-info">No emails found</div>
       ) : (
-        sortedEmails.map((email, index) => (
-          <EmailItem key={index} email={{ ...email, id: index }} />
+        sortedEmails.map((email) => (
+          <EmailItem key={email.id} email={{ ...email, id: email.id }} />
         ))
       )}
     </div>
